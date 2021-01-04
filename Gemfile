@@ -16,7 +16,7 @@ group :tools do
   gem 'guard-test'
 end
 
-gem 'minitest-rails-capybara'
+gem 'minitest-rails-capybara', '>= 2.1.2'
 
 group :test do
   gem 'mysql2', '~> 0.4.4'

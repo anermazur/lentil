@@ -7,7 +7,7 @@ gemspec
 
 group :development do
   gem 'rb-readline'
-  gem 'guard'
+  gem 'guard', '>= 2.14.2'
   gem 'rb-fsevent', :require => RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
   gem 'rb-inotify', :require => RUBY_PLATFORM.include?('linux') && 'rb-inotify'
 end
@@ -16,7 +16,7 @@ group :tools do
   gem 'guard-test'
 end
 
-gem 'minitest-rails-capybara'
+gem 'minitest-rails-capybara', '>= 3.0.0'
 
 group :test do
   gem 'mysql2', '~> 0.4.4'
